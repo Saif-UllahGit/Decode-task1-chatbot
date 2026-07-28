@@ -1,0 +1,199 @@
+/* ===================================================
+   GLOBAL
+=================================================== */
+
+*{
+    font-family: "Segoe UI", sans-serif;
+}
+
+.stApp{
+    background: linear-gradient(135deg,#0f172a,#172554,#111827);
+    color:white;
+}
+
+.block-container{
+    max-width:900px;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+
+/* ===================================================
+   TITLE
+=================================================== */
+
+.main-title{
+    text-align:center;
+    color:white;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#cbd5e1;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+
+/* ===================================================
+   CHAT MESSAGES
+=================================================== */
+
+[data-testid="stChatMessage"]{
+
+    border-radius:18px;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 5px 18px rgba(0,0,0,.25);
+
+}
+
+
+/* User */
+
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]){
+
+    background:#2563eb22;
+
+    border-left:6px solid #3b82f6;
+
+}
+
+
+/* Assistant */
+
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]){
+
+    background:#16a34a22;
+
+    border-left:6px solid #22c55e;
+
+}
+
+
+/* ===================================================
+   CHAT INPUT
+=================================================== */
+
+.stChatInputContainer{
+
+    background:#1f2937;
+
+    border-radius:16px;
+
+    border:1px solid #374151;
+
+    padding:8px;
+
+}
+
+
+/* ===================================================
+   SIDEBAR
+=================================================== */
+
+section[data-testid="stSidebar"]{
+
+    background:#111827;
+
+}
+
+section[data-testid="stSidebar"] *{
+
+    color:white;
+
+}
+
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+
+.stButton>button{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:10px;
+
+    color:white;
+
+    font-weight:bold;
+
+    background:linear-gradient(90deg,#2563eb,#4f46e5);
+
+    transition:.3s;
+
+}
+
+.stButton>button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
+
+}
+
+
+/* ===================================================
+   METRICS
+=================================================== */
+
+[data-testid="metric-container"]{
+
+    background:#1f2937;
+
+    border:1px solid #374151;
+
+    border-radius:15px;
+
+    padding:12px;
+
+}
+
+
+/* ===================================================
+   CODE BLOCKS
+=================================================== */
+
+pre{
+
+    border-radius:15px !important;
+
+}
+
+
+/* ===================================================
+   SCROLLBAR
+=================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#475569;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
